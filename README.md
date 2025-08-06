@@ -33,6 +33,13 @@ Directly copying the .ir files to the Flipper's SD card is the fastest and safes
 7. Select `SD Card`, then navigate to the `infrared` folder by double-clicking its icon.
 8. Drag the downloaded `.ir` files you want on your Flipper from the File Explorer into the QFlipper File Manager.
 
+### Method 3: Copy Files using the [Flipper Mobile App](https://play.google.com/store/apps/details?id=com.flipperdevices.app)
+
+1. Download/copy the desired .ir files from the database to your smartphone, e.g. to the Download folder. Be sure the extension is ".ir".
+2. Open the Flipper Mobile App and go to Connected > Options > activate Experimental Options
+3. Open the now appearing "File Manager" > ext > infrared > upload symbol > Choose .ir file from your Download folder
+4. The remote can be found on your Flipper Zero > Infrared > Saved Remotes
+
 
 ## Contributing
 
@@ -67,18 +74,18 @@ name: Power
 ### Naming Scheme
 
 Please use this naming scheme for buttons. 
-This helps us create universal assets more easily and maintain cosistency.
+This helps us create universal assets more easily and maintain consistency.
 
-| TVs       | Audio    | ACs       |
-| --------- | -------- | --------- |
-| `Power`   | `Power`  | `Off`     |
-| `Vol_up`  | `Vol_up` | `Cool_hi` |
-| `Vol_dn`  | `Vol_dn` | `Cool_lo` |
-| `Ch_next` | `Next`   | `Heat_hi` |
-| `Ch_prev` | `Prev`   | `Heat_lo` |
-| `Mute`    | `Mute`   | `Dh`      |
-|           | `Play`   |           |
-|           | `Pause`  |           |
+| TVs       | Audio    | ACs       | LEDs            |
+| --------- | -------- | --------- | --------------- |
+| `Power`   | `Power`  | `Off`     | `Power_off`     |
+| `Vol_up`  | `Vol_up` | `Cool_hi` | `Power_on`      |
+| `Vol_dn`  | `Vol_dn` | `Cool_lo` | `Brightness_up` |
+| `Ch_next` | `Next`   | `Heat_hi` | `Brightness_dn` |
+| `Ch_prev` | `Prev`   | `Heat_lo` | `Red`           |
+| `Mute`    | `Mute`   | `Dh`      | `Green`         |
+|           | `Play`   |           | `Blue`          |
+|           | `Pause`  |           | `White`         |
 
 
 ## Universal Remotes
